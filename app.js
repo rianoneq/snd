@@ -90,7 +90,7 @@ let usercard = document.getElementById("usercard");
 
 let first_name = document.createElement("p");
 let username = document.createElement("p");
-let ava = document.createElement("img");
+let ava = document.createElement("p");
 
 first_name.innerText = `${tg.initDataUnsafe.user.first_name}`
 username.innerText = `@${tg.initDataUnsafe.user.username}`
