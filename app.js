@@ -88,9 +88,14 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
 
 let usercard = document.getElementById("usercard");
 
-let p = document.createElement("p");
+let first_name = document.createElement("p");
+let username = document.createElement("p");
+let ava = document.createElement("img");
 
-p.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}`;
+first_name.innerText = `${tg.initDataUnsafe.user.first_name}`
+username.innerText = `@${tg.initDataUnsafe.user.username}`
+ava.href = `${tg.initDataUnsafe.user.photo_url}`
 
-usercard.appendChild(p);
+usercard.appendChild(first_name);
+usercard.appendChild(first_name);
+usercard.appendChild(ava);
