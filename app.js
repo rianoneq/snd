@@ -97,5 +97,5 @@ username.innerText = `@${tg.initDataUnsafe.user.username}`
 ava.href = `${tg.initDataUnsafe.user.photo_url}`
 
 usercard.appendChild(first_name);
-usercard.appendChild(first_name);
+usercard.appendChild(username);
 usercard.appendChild(ava);
